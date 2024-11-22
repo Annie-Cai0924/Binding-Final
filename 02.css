@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 375px;
+    background: #E8E5DD;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+/* 顶部区域 */
+.header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header-future {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    left: 14px;
+    top: 2px;
+}
+
+.header-number {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 130px;
+    text-align: center;
+}
+
+.header-menu {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}
+
+/* 标签区域 */
+.tags {
+    margin-top: 73px;
+    margin-left: 1px;
+    position: relative;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    font-family: Lato;
+    font-size: 18px;
+}
+
+.tag-divider {
+    width: 3px;
+    height: 25px;
+    background: black;
+    position: absolute;
+    right: 150px;
+    top: 35px;
+}
+
+/* 标题区域 */
+.title-section {
+    margin-top: 30px;
+}
+
+.title-spec {
+    font-family: MuseoModerno;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.title-main {
+    font-family: Syne;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+
+/* 作者信息 */
+.author-info {
+    font-size: 22px; 
+    font-family: EB Garamond; 
+    font-weight: 600; 
+    color: rgba(0, 0, 0, 0.50);
+    
+}
+
+.author-name {
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+.publisher {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 描述文本 */
+.description {
+    width: 278px;
+    margin: 40px auto;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 分隔线 */
+.divider {
+    width: 284px;
+    height: 1px;
+    background: black;
+    margin: 40px auto;
+}
+
+/* 章节内容 */
+.chapter {
+    padding: 30px;
+}
+
+.chapter-number {
+    font-family: 'EB Garamond';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.chapter-title {
+    text-align: center;
+    font-family: MuseoModerno;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.chapter-quote {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 250px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+
+.transformation {
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 15px 0;
+    word-wrap: break-word
+    
+}
+
+
+/* 正文内容 */
+.content {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 274px;
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+
+.content .bold {
+    font-weight: bolder;
+}
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    font-family: 'EB Garamond';
+    font-size: 15px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    word-wrap: break-word
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1000;
+}
+
+.menu-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.timeline {
+    width: 10px;
+    height: 429.49px;
+    left: 158.50px;
+    top: 104px;
+    position: absolute;
+}
+
+.timeline-line {
+    width: 420.63px;
+    height: 0;
+    left: 4.55px;
+    top: 5.31px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    border: 2px white solid;
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 9.74px;
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+}
+
+.timeline-dot:nth-child(2) { top: 0; left: -2px;}
+.timeline-dot:nth-child(3) { top: 139.92px; left: -2px;}
+.timeline-dot:nth-child(4) { top: 279.83px; left: -2px;}
+.timeline-dot:nth-child(5) { top: 421.75px; left: -2px; }
+
+.section-03 {
+    left: 179px;
+    top: 423px;
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section-00 {
+    height: 93px;
+    left: 72px;
+    top: 57px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.section-00 div {
+    align-self: stretch;
+    color: white;
+    font-family: 'Playfair Display';
+}
+
+.section-00 div:first-child {
+    text-align: right;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section-00 div:last-child {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.section-01 {
+    height: 122px;
+    left: 179px;
+    top: 159px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section-01 div {
+    align-self: stretch;
+    color: white;
+    font-family: 'Playfair Display';
+}
+
+.section-01 div:first-child {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section-01 div:last-child {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.section-02 {
+    width: 107px;
+    left: 41px;
+    top: 281px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 48px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 600;
+}
+
+.observer {
+    width: 107px;
+    left: 179px;
+    top: 485px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+
+.speculative {
+    left: 27px;
+    top: 336px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 22px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+
+.menu-container .future {
+    left: 22px;
+    top: 23px;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+/* 大屏导航样式 */
+.desktop-nav {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(232, 229, 221, 0.95);
+    padding: 25px 60px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.desktop-nav-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-home {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-home:hover {
+    opacity: 0.7;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links a {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* 响应式布局调整 */
+@media screen and (min-width: 1024px) {
+    body {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px 80px;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    /* 内容区域调整 */
+    .content {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .chapter {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+
+    .transformation {
+        font-size: 36px;
+        margin: 80px 0;
+        text-align: center;
+    }
+
+    .chapter-quote {
+        width: 70%;
+        font-size: 24px;
+        line-height: 1.8;
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    /* 标题区域调整 */
+    .title-main {
+        font-size: 140px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .title-main span[style*="text-align: right"] {
+        display: inline-block !important;
+        text-align: center !important;
+    }
+
+    /* 描述文本调整 */
+    .description {
+        width: 60%;
+        margin: 80px auto;
+        padding-left: 60px;
+        font-size: 20px;
+        line-height: 1.8;
+        text-align: left;
+        position: relative;
+    }
+    
+    /* 添加左侧边线 */
+    .chapter-quote::before {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.8;
+    }
+
+    /* 分隔线调整 */
+    .divider {
+        width: 90%;
+        margin: 60px auto;
+    }
+}
